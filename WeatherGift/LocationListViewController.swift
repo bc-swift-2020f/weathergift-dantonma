@@ -35,11 +35,11 @@ class LocationListViewController: UIViewController {
     @IBAction func editButtonPressed(_ sender: Any) {
         if tableView.isEditing{
             tableView.setEditing(false, animated: true)
-            sender.title = "Edit"
+//            sender.title = "Edit"
             addBarButton.isEnabled = true
         } else {
             tableView.setEditing(true, animated: true)
-            sender.title = "Done"
+//            sender.title = "Done"
             addBarButton.isEnabled = false
         }
         
