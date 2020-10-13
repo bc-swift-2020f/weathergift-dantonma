@@ -32,8 +32,7 @@ class LocationListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
-        selectedLocationIndex = tableView.indexPathForSelectedRow
+        selectedLocationIndex = tableView.indexPathForSelectedRow!.row
     }
 
     @IBAction func addButtonPressed(_ sender: Any) {

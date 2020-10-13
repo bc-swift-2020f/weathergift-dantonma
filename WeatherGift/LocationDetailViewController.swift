@@ -43,7 +43,10 @@ class LocationDetailViewController: UITableViewController {
     }
 
     @IBAction func unwindFromLocationListViewController(segue: UIStoryboardSegue){
-        
+        let source = segue.source as! LocationListViewController
+        weatherLocations = source.weatherLocations
+        weatherLocation = weatherLocations[source.selectedLocationIndex]
+        updateUserInterface()
         
     }
     
