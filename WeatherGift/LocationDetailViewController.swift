@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LocationDetailViewController: UITableViewController {
+class LocationDetailViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
