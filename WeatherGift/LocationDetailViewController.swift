@@ -39,6 +39,7 @@ class LocationDetailViewController: UIViewController {
         
         pageControll.numberOfPages = pageViewController.weatherLocations.count
         pageControll.currentPage = locationIndex
+        weatherLocation.getData()
         
     }
     
